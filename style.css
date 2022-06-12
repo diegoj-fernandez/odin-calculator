@@ -19,8 +19,57 @@ body {
 }
 
 .calc-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: #62afb7;
     height: 70vh;
     width: 50vh;
+    border: ;
+    border-radius: 15px;
+    padding: 35px;
+    gap: 10px;
 }
+
+.screen {
+    background: #d9ffea;
+    height: 30vh;
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.eye{
+    background: #000000;
+    border-radius: 50%;
+    height: 5vh;
+    width: 5vh;
+}
+
+.mouth {
+    border-radius: 50%;
+    height: 6vh;
+    width: 17vh;
+    border-bottom: 5px solid black;
+}
+
+.power {
+    height: 3vh;
+    width: auto;
+}
+
+.btn-container {
+    height: 23vh;
+    width: auto;
 }
