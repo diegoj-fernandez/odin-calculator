@@ -39,6 +39,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 25px;
 }
 
 .eye-container {
@@ -133,6 +134,11 @@ body {
 
 .operation {
     background: #ffec47;
+}
+
+#answer {
+    float: right;
+    /*text-align: right;*/
 }
 
 .input {
