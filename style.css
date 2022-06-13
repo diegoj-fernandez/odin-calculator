@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     margin: 0;
     box-sizing: border-box;
 }
@@ -118,6 +118,11 @@ body {
     width: 20%;
 }
 
+.btn:hover {
+    border: 1px solid white;
+    color: white;
+}
+
 .wipe {
     background: #f20553;
     width: 20%;
@@ -129,4 +134,9 @@ body {
 
 .operation {
     background: #ffec47;
+}
+
+.calc-op {
+    background: black;
+    color: #33ff00;
 }
