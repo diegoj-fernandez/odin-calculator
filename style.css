@@ -25,7 +25,6 @@ body {
     background: #63bda4;
     height: 70vh;
     width: 50vh;
-    border: ;
     border-radius: 15px;
     padding: 35px;
     gap: 20px;
@@ -136,7 +135,28 @@ body {
     background: #ffec47;
 }
 
-.calc-op {
-    background: black;
-    color: #33ff00;
+.input {
+    /*position: relative;
+    top: -40%;
+    left: -40%;*/
+    word-break: break-word;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
 }
+
+.input::after {
+    content: "";
+    width: 7px;
+    height: 20px;
+    background: #33ff00;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
