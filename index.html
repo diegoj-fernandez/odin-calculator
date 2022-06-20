@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b081ab79a0.js" crossorigin="anonymous"></script>
     <title>Odin Calculator</title>
 </head>
 <body>
     <div class="calc-body">
         <div class="screen">
+            <!-- <input type="text" class="sub-screen" value="" disabled /> -->
           <div class="eye-container">
               <div class="eye left"></div>
               <div class ="eye right"></div>
@@ -18,39 +20,39 @@
         </div>
         <div class="power">
             <div class="power-strip"></div>
-            <div class="power-btn"></div>
+            <div class="power-btn"><i class="fa-solid fa-power-off"></i></div>
         </div>
         <div class="btn-container">
             <div class="btn-sub-container">
                 <div class="row-one">
-                    <button class="btn wipe clr">CLR</button>
-                    <button class="btn wipe delete">DEL</button>
-                    <button class="btn wipe"></button>
+                    <button class="btn wipe clr" value="clear">CLR</button>
+                    <button class="btn wipe delete" value="delete">DEL</button>
+                    <button class="btn"></button>
                     <button class="btn operation divide">/</button>
                 </div>
                 <div class="row-two">
-                    <button class="btn num seven">7</button>
-                    <button class="btn num eight">8</button>
-                    <button class="btn num nine">9</button>
-                    <button class="btn operation multiply">x</button>
+                    <button class="btn num seven" value="7">7</button>
+                    <button class="btn num eight" value="8">8</button>
+                    <button class="btn num nine" value="9">9</button>
+                    <button class="btn operation multiply" value="x">x</button>
                 </div>
                 <div class="row-three">
-                    <button class="btn num four">4</button>
-                    <button class="btn num five">5</button>
-                    <button class="btn num six">6</button>
-                    <button class="btn operation add">+</button>
+                    <button class="btn num four" value="4">4</button>
+                    <button class="btn num five" value="5">5</button>
+                    <button class="btn num six"value="6">6</button>
+                    <button class="btn operation add" value="+">+</button>
                 </div>
                 <div class="row-four">
-                    <button class="btn num one">3</button>
-                    <button class="btn num two">2</button>
-                    <button class="btn num three">1</button>
-                    <button class="btn operation substract">-</button>
+                    <button class="btn num one" value="3">3</button>
+                    <button class="btn num two" value="2">2</button>
+                    <button class="btn num three" value="1">1</button>
+                    <button class="btn operation substract" value="-">-</button>
                 </div>
                 <div class="row-five">
-                    <button class="btn num sign">-/+</button>
-                    <button class="btn num zero">0</button>
-                    <button class="btn num point">.</button>
-                    <button class="btn equal">=</button>
+                    <button class="btn sign" value="-">-/+</button>
+                    <button class="btn num zero" value="0">0</button>
+                    <button class="btn decimal" value=".">.</button>
+                    <button class="btn operation equal" value="=">=</button>
                 </div>
             </div>
         </div>
