@@ -1,4 +1,7 @@
+// Sources used:
 // Calculator object idea from https://freshman.tech/calculator/
+// Color scheme from https://www.color-hex.com/color-palette/36214
+// Icons from https://fontawesome.com
 
 // VARIABLES
 
