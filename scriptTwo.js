@@ -72,8 +72,14 @@ const input = (digit) => {
 }
 
 const decimal = (dot) => {
+
+    //when you continue with operations after hitting equal, the display value adds
+    //a decimal instead of creating a new string
+
     if (calculator.displayValue.includes(".")) {
         return
+    // } else if (calculator.waitingForSecondOperand === true && calculator.operator) {
+    //     calculator.displayValue = "0" + dot; 
     } else {
         calculator.displayValue = calculator.displayValue + dot;
     }
@@ -122,6 +128,12 @@ const operation = (operand) => {
     calculator.operator = operand;
     calculator.waitingForSecondOperand = true;
     console.log(calculator);
+
+    // how can i optimize this last portion??
+
+    if (operand === "=") {
+        calculator.operator = null;
+    }
 }
 
 // DOM MANIPULATION
@@ -144,20 +156,23 @@ power.addEventListener("click", () => {
 
 btn.forEach(function (i) {
     i.addEventListener("click", () => {
-        if (i.classList.contains("operation")) {
-            operation(i.value);
-        } else if (i.classList.contains("sign")) {
-            neg(i.value);
-        } else if (i.classList.contains("decimal")) {
-            decimal(i.value);
-        } else if (i.classList.contains("wipe")) {
-            wipe(i.value);
-        } else if (i.classList.contains("num")) {
-            input(i.value);
-        }
+        if (screen.contains(eyeContainer)) {
+            return;
+        } else {
+            if (i.classList.contains("operation")) {
+                operation(i.value);
+            } else if (i.classList.contains("sign")) {
+                neg(i.value);
+            } else if (i.classList.contains("decimal")) {
+                decimal(i.value);
+            } else if (i.classList.contains("wipe")) {
+                wipe(i.value);
+            } else if (i.classList.contains("num")) {
+                input(i.value);
+            }
 
-        answerArea.value = calculator.displayValue;
-        //screen.innerText = calculator.displayValue;
-        console.log(calculator);
+            answerArea.value = calculator.displayValue;
+            console.log(calculator);
+        }
     });
 });
